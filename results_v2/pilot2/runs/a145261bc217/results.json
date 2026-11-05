@@ -1,0 +1,263 @@
+{
+  "run_id": "a145261bc217",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 2,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null
+    }
+  },
+  "method_name": "sfspcl",
+  "suite": "pilot_v3",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "seed": 2,
+  "class_names": [
+    "Normal",
+    "DDoS",
+    "Injection",
+    "Malware",
+    "InformationGathering",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70012,
+    186612,
+    71918,
+    58576,
+    49613,
+    254
+  ],
+  "client_train_sizes": [
+    53276,
+    30223,
+    3007,
+    23657,
+    232,
+    32245,
+    27408,
+    29612,
+    15449,
+    32528,
+    14640,
+    23389,
+    23843,
+    16060,
+    25939,
+    6418,
+    18571,
+    19851,
+    16664,
+    23973
+  ],
+  "best_round": 50,
+  "best_val_macro_f1": 0.8777548739455189,
+  "test": {
+    "macro_f1": 0.8822139694948349,
+    "accuracy": 0.899422132100121,
+    "balanced_accuracy": 0.8811734504352672,
+    "weighted_f1": 0.8939046264769311,
+    "tail_recall": 0.9728086923779002,
+    "tail_classes": [
+      5,
+      4
+    ],
+    "worst_client_f1_p10": 0.6773743874403382,
+    "mean_client_f1": 0.8717353825367905,
+    "per_class_recall": [
+      0.9999499874968742,
+      0.9881977671451355,
+      0.8581798694338887,
+      0.4950956937799043,
+      0.960110138378989,
+      0.9855072463768116
+    ],
+    "per_class_f1": [
+      0.9999749931231089,
+      0.9762182802276224,
+      0.7604308316605151,
+      0.6574798459155713,
+      0.9064791361151846,
+      0.9927007299270073
+    ],
+    "per_class_support": [
+      19995,
+      53295,
+      20526,
+      16720,
+      14164,
+      69
+    ],
+    "per_client_f1": [
+      0.999950704919649,
+      0.983902558452687,
+      1.0,
+      0.959754340801184,
+      0.9404439789357307,
+      0.4396114753622606,
+      0.9211024100256159,
+      0.9841400382867451,
+      0.7902248683453905,
+      1.0,
+      0.8050802020911301,
+      0.41299431149852195,
+      0.9999265947295016,
+      0.8331304619631709,
+      0.9999087091473434,
+      0.7037924887823468,
+      0.8130079422983858,
+      0.880933082863043,
+      0.9668034822331031,
+      1.0
+    ],
+    "n_test": 124769
+  },
+  "profile": {
+    "params": 67014,
+    "flops_per_sample": 131328,
+    "latency_ms_b1": 1.064792334800586,
+    "latency_ms_b1024": 0.995706624817103,
+    "train_time_s": 273.56664670282044,
+    "wall_time_s": 275.1267807483673,
+    "comm_up_MB": 134.04328,
+    "peak_rss_mb": 1495.8984375,
+    "peak_vram_mb": 332.44189453125
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.7824067215322649,
+      "val_acc": 0.779458228416545,
+      "comm_up_MB": 13.41808,
+      "train_time_s": 26.07161421282217
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.807236997165496,
+      "val_acc": 0.7983512694263123,
+      "comm_up_MB": 26.82088,
+      "train_time_s": 53.900532024912536
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.8457888585782736,
+      "val_acc": 0.836089236740389,
+      "comm_up_MB": 40.22368,
+      "train_time_s": 82.74541925801896
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.8386266830185737,
+      "val_acc": 0.8300267838527049,
+      "comm_up_MB": 53.62648,
+      "train_time_s": 113.48489764519036
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.8488690132867985,
+      "val_acc": 0.8407563631697968,
+      "comm_up_MB": 67.02928,
+      "train_time_s": 136.38932796637528
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.8750150672162005,
+      "val_acc": 0.8975637920803194,
+      "comm_up_MB": 80.43208,
+      "train_time_s": 161.54120711470023
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.8600905661393542,
+      "val_acc": 0.8536029895270324,
+      "comm_up_MB": 93.83488,
+      "train_time_s": 190.0826785757672
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.8640527164074873,
+      "val_acc": 0.8740998540520601,
+      "comm_up_MB": 107.23768,
+      "train_time_s": 217.30201370897703
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.846577779336922,
+      "val_acc": 0.8539397924652371,
+      "comm_up_MB": 120.64048,
+      "train_time_s": 246.22164990589954
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.8777548739455189,
+      "val_acc": 0.899119500890122,
+      "comm_up_MB": 134.04328,
+      "train_time_s": 273.56664670282044
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 64
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=grouped",
+      "method=sfspcl",
+      "seed=2",
+      "suite=pilot_v3",
+      "fl.lr=0.05",
+      "method.tau=1.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-11-01T11:45:14"
+  }
+}

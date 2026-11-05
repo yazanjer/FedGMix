@@ -1,0 +1,5 @@
+suite: tune_v4
+# Pilot 3 (pre-registered 2026-11-02): tune the virtual-sample ratio on seed 100, fine labels, mean validation
+# macro-F1 over both datasets. A selection on a grid edge is reported, not extended.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_v], seeds: [100], sweep: {method.virtual: [0.25, 0.5, 1.0, 2.0]}}

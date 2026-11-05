@@ -1,0 +1,264 @@
+{
+  "run_id": "b52c97d70344",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 1,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null,
+      "head": "etf"
+    }
+  },
+  "method_name": "sfspcl_etf",
+  "suite": "pilot_v2",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "seed": 1,
+  "class_names": [
+    "Normal",
+    "DDoS",
+    "Injection",
+    "Malware",
+    "InformationGathering",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70010,
+    186616,
+    71916,
+    58571,
+    49614,
+    254
+  ],
+  "client_train_sizes": [
+    13545,
+    12750,
+    13678,
+    27688,
+    33541,
+    17538,
+    9222,
+    13800,
+    39542,
+    21387,
+    22059,
+    16259,
+    25271,
+    23563,
+    34262,
+    32495,
+    31364,
+    4956,
+    7560,
+    36501
+  ],
+  "best_round": 35,
+  "best_val_macro_f1": 0.8788966355665156,
+  "test": {
+    "macro_f1": 0.882183335687849,
+    "accuracy": 0.8998372967210881,
+    "balanced_accuracy": 0.8845651278466559,
+    "weighted_f1": 0.899450085185211,
+    "tail_recall": 0.9521030045553331,
+    "tail_classes": [
+      5,
+      4
+    ],
+    "worst_client_f1_p10": 0.7351099040317016,
+    "mean_client_f1": 0.8544498773810691,
+    "per_class_recall": [
+      0.9998999749937484,
+      0.9745355601426159,
+      0.778865828705057,
+      0.6498833941278479,
+      0.9476842699802316,
+      0.9565217391304348
+    ],
+    "per_class_f1": [
+      0.9997999699954994,
+      0.9812472248726984,
+      0.7442217722226101,
+      0.6938423723944201,
+      0.9174669355114315,
+      0.9565217391304348
+    ],
+    "per_class_support": [
+      19995,
+      53290,
+      20526,
+      16723,
+      14164,
+      69
+    ],
+    "per_client_f1": [
+      0.8199073494659231,
+      0.7875367381522728,
+      0.8619679146150798,
+      0.7466104624656316,
+      0.8388182365142572,
+      0.5972722667097131,
+      0.8983584704957255,
+      0.829318550577405,
+      0.9998439373270982,
+      0.773255712668829,
+      0.9999503229011426,
+      0.6316048781263317,
+      0.9305186170212766,
+      0.9722227848716619,
+      0.999948914431673,
+      0.9008812405873414,
+      0.7646941889739386,
+      0.9079250122095466,
+      0.8283619495065362,
+      1.0
+    ],
+    "n_test": 124767
+  },
+  "profile": {
+    "params": 71168,
+    "flops_per_sample": 139520,
+    "latency_ms_b1": 0.8205676998477429,
+    "latency_ms_b1024": 0.7778729044366628,
+    "train_time_s": 276.41453238157555,
+    "wall_time_s": 277.7740406990051,
+    "comm_up_MB": 141.58328,
+    "peak_rss_mb": 1662.30078125,
+    "peak_vram_mb": 321.7119140625
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.7647771520802572,
+      "val_acc": 0.8545953140786119,
+      "comm_up_MB": 14.17208,
+      "train_time_s": 28.94290517969057
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.7864987624331375,
+      "val_acc": 0.7938002148916722,
+      "comm_up_MB": 28.32888,
+      "train_time_s": 57.2848959506955
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.8073765286738476,
+      "val_acc": 0.8345494491396315,
+      "comm_up_MB": 42.48568,
+      "train_time_s": 85.05394057533704
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.8246735738699806,
+      "val_acc": 0.8468816652500922,
+      "comm_up_MB": 56.64248,
+      "train_time_s": 114.73374764132313
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.8311741265897586,
+      "val_acc": 0.8313100373654922,
+      "comm_up_MB": 70.79928,
+      "train_time_s": 145.88155682268552
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.8176570802472689,
+      "val_acc": 0.8248632872011161,
+      "comm_up_MB": 84.95608,
+      "train_time_s": 175.61031875386834
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.8788966355665156,
+      "val_acc": 0.8996263450775374,
+      "comm_up_MB": 99.11288,
+      "train_time_s": 205.25642781658098
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.8593339067289595,
+      "val_acc": 0.8755231970749073,
+      "comm_up_MB": 113.26968,
+      "train_time_s": 224.6788432537578
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.822526485745382,
+      "val_acc": 0.8124188142469971,
+      "comm_up_MB": 127.42648,
+      "train_time_s": 252.41212795954198
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.8725769219575753,
+      "val_acc": 0.8801096909729461,
+      "comm_up_MB": 141.58328,
+      "train_time_s": 276.41453238157555
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 24
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/src/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=grouped",
+      "method=sfspcl_etf",
+      "seed=1",
+      "suite=pilot_v2",
+      "fl.lr=0.05",
+      "method.head_scale=10.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-10-31T21:45:06"
+  }
+}

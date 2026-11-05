@@ -1,0 +1,262 @@
+{
+  "run_id": "ef6ae5598fab",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 1,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.02,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "local",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "ce",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": true,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": 0.0
+    }
+  },
+  "method_name": "scaffold",
+  "suite": "pilot_v2",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "seed": 1,
+  "class_names": [
+    "Normal",
+    "DDoS",
+    "Injection",
+    "Malware",
+    "InformationGathering",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70010,
+    186616,
+    71916,
+    58571,
+    49614,
+    254
+  ],
+  "client_train_sizes": [
+    13545,
+    12750,
+    13678,
+    27688,
+    33541,
+    17538,
+    9222,
+    13800,
+    39542,
+    21387,
+    22059,
+    16259,
+    25271,
+    23563,
+    34262,
+    32495,
+    31364,
+    4956,
+    7560,
+    36501
+  ],
+  "best_round": 45,
+  "best_val_macro_f1": 0.8548874472206197,
+  "test": {
+    "macro_f1": 0.8547379153914392,
+    "accuracy": 0.8430193881394921,
+    "balanced_accuracy": 0.8624948270650404,
+    "weighted_f1": 0.8443554604382659,
+    "tail_recall": 0.9126976331094548,
+    "tail_classes": [
+      5,
+      4
+    ],
+    "worst_client_f1_p10": 0.6620166672384766,
+    "mean_client_f1": 0.8327505089216697,
+    "per_class_recall": [
+      0.999299824956239,
+      0.8175830362169263,
+      0.9000292312189418,
+      0.6326616037792262,
+      0.8833662807116633,
+      0.9420289855072463
+    ],
+    "per_class_f1": [
+      0.8130455128074708,
+      0.873327520370426,
+      0.8056518610584157,
+      0.7621380204581473,
+      0.9322355921469284,
+      0.9420289855072463
+    ],
+    "per_class_support": [
+      19995,
+      53290,
+      20526,
+      16723,
+      14164,
+      69
+    ],
+    "per_client_f1": [
+      0.8695273595886782,
+      0.6545701009502266,
+      0.9962133510676591,
+      0.6628440634927266,
+      0.7851162403808714,
+      0.9130290947254864,
+      0.8411515610610292,
+      0.722860700368484,
+      0.9998931966250133,
+      0.7388056713230617,
+      0.9998012323593719,
+      0.6688984544325591,
+      0.9996781839516681,
+      0.9921104212777132,
+      0.9994889093325156,
+      0.9304077452317546,
+      0.7779012271295169,
+      0.977692092877869,
+      0.9163114766632698,
+      0.2087090955939191
+    ],
+    "n_test": 124767
+  },
+  "profile": {
+    "params": 67014,
+    "flops_per_sample": 131328,
+    "latency_ms_b1": 0.4669670690782368,
+    "latency_ms_b1024": 0.4625535348895937,
+    "train_time_s": 223.54493698687293,
+    "wall_time_s": 225.14860939979553,
+    "comm_up_MB": 268.056,
+    "peak_rss_mb": 1478.8671875,
+    "peak_vram_mb": 327.04443359375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.6257355202062311,
+      "val_acc": 0.799701717529708,
+      "comm_up_MB": 26.8056,
+      "train_time_s": 21.428264399059117
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.6448821840300153,
+      "val_acc": 0.793351187517039,
+      "comm_up_MB": 53.6112,
+      "train_time_s": 45.71638720203191
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.6752888917728286,
+      "val_acc": 0.842343281427907,
+      "comm_up_MB": 80.4168,
+      "train_time_s": 66.9752401530277
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.6793205857655608,
+      "val_acc": 0.8434498131725388,
+      "comm_up_MB": 107.2224,
+      "train_time_s": 92.05455056298524
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.7107140240949298,
+      "val_acc": 0.8233398014657537,
+      "comm_up_MB": 134.028,
+      "train_time_s": 114.01144627202302
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.7550040866917408,
+      "val_acc": 0.812146190483827,
+      "comm_up_MB": 160.8336,
+      "train_time_s": 136.8863752738107
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.8148561520876522,
+      "val_acc": 0.8191542248664946,
+      "comm_up_MB": 187.6392,
+      "train_time_s": 160.6682644376997
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.8290558787168792,
+      "val_acc": 0.8149045014994307,
+      "comm_up_MB": 214.4448,
+      "train_time_s": 182.64147016149946
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.8548874472206197,
+      "val_acc": 0.8430488958737592,
+      "comm_up_MB": 241.2504,
+      "train_time_s": 206.09979837574065
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.8500335724290671,
+      "val_acc": 0.8360248247991404,
+      "comm_up_MB": 268.056,
+      "train_time_s": 223.54493698687293
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 24
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/src/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=grouped",
+      "method=scaffold",
+      "seed=1",
+      "suite=pilot_v2",
+      "fl.lr=0.02",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-10-31T21:40:08"
+  }
+}

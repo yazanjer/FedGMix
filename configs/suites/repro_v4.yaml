@@ -1,0 +1,4 @@
+suite: repro_v4
+# After the pilot-3 code change, SFS-PCL seed 0 (CICIoT2023, fine) must keep run_id c3feb5c90cf1 and reproduce bit-exactly.
+groups:
+  - {datasets: [ciciot2023], labels: [fine], methods: [sfspcl], seeds: [0]}

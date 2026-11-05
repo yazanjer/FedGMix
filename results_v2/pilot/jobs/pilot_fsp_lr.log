@@ -1,0 +1,10 @@
+[suite pilot_fsp_lr] 8 entries, 8 unique, 8 pending, workers=6
+[1/8] ok  f1e2a05405b8 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl', 'seed': 0} | elapsed 4.4 min, eta 30.6 min
+[2/8] ok  76b0e72fbcd4 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl', 'seed': 1} | elapsed 4.4 min, eta 13.2 min
+[3/8] ok  e62e2a222361 {'dataset': 'ciciot2023', 'labels': 'grouped', 'method': 'sfspcl', 'seed': 0} | elapsed 6.7 min, eta 11.2 min
+[4/8] ok  4ecf8ab6e18c {'dataset': 'ciciot2023', 'labels': 'grouped', 'method': 'sfspcl', 'seed': 1} | elapsed 6.8 min, eta 6.8 min
+[5/8] ok  e21e891fe74f {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl', 'seed': 0} | elapsed 6.8 min, eta 4.1 min
+[6/8] ok  80f931faefdf {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl', 'seed': 1} | elapsed 6.8 min, eta 2.3 min
+[7/8] ok  ccc5823eabd6 {'dataset': 'edgeiiot', 'labels': 'grouped', 'method': 'sfspcl', 'seed': 0} | elapsed 8.0 min, eta 1.1 min
+[8/8] ok  9f5a128e386e {'dataset': 'edgeiiot', 'labels': 'grouped', 'method': 'sfspcl', 'seed': 1} | elapsed 8.0 min, eta 0.0 min
+[suite pilot_fsp_lr] finished; failed: []

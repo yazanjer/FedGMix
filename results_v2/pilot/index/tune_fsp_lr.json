@@ -1,0 +1,92 @@
+[
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "6bc4b9d8225f",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.01
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "066fa3ce5434",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.02
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "73e5ff512e43",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.05
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "216d5f3df1ef",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.1
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "8acafa4a003c",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.2
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "b62d9b98e815",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.01
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "effee2f2018e",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.02
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "94cdf6048269",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.05
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "f5c137bee56d",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.1
+ },
+ {
+  "suite": "tune_fsp_lr",
+  "run_id": "c468206123ec",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 100,
+  "fl.lr": 0.2
+ }
+]

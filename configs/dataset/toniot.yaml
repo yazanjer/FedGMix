@@ -1,0 +1,31 @@
+name: toniot
+# UNSW TON_IoT network dataset, Train_Test_Network.csv (Moustafa, Sustainable Cities and Society 2021).
+# Kaggle mirror alaaelmor/ton-iot-train-test-network; verified 2026-11-02: 461,043 rows x 45 columns, standard class
+# counts, sha256 65d5465df1809b984fd10e4703bc9c012d1aefd11803773856364216f0a3520d.
+kaggle_slug: alaaelmor/ton-iot-train-test-network
+file_glob: "Train_Test_Network.csv"
+exclude_paths: []
+label_columns: [type]
+other_label_columns: [label]
+# identifiers, timestamps, ports and free-text fields (same policy as the Edge-IIoTset config)
+drop_columns: [ts, src_ip, src_port, dst_ip, dst_port, dns_query, ssl_subject, ssl_issuer, http_uri, http_user_agent,
+  weird_name, weird_addl]
+categorical_columns: [proto, service, conn_state, dns_AA, dns_RD, dns_RA, dns_rejected, ssl_version, ssl_cipher,
+  ssl_resumed, ssl_established, http_trans_depth, http_method, http_version, http_orig_mime_types,
+  http_resp_mime_types, weird_notice]
+hash_buckets: 8
+class_cap: 50000
+classes: [normal, backdoor, ddos, dos, injection, mitm, password, ransomware, scanning, xss]
+label_aliases: {}
+groups: [Normal, DoS, Malware, Web, Password, Scanning, MITM]
+group_of_class:
+  normal: 0
+  ddos: 1
+  dos: 1
+  backdoor: 2
+  ransomware: 2
+  injection: 3
+  xss: 3
+  password: 4
+  scanning: 5
+  mitm: 6

@@ -1,0 +1,13 @@
+suite: tune_grid
+# Full grid (pre-registered 2026-11-02): tune the new baselines' own hyperparameters with the same protocol as every
+# other method (seed 100, fine labels, mean validation macro-F1 over CICIoT2023 and Edge-IIoTset). TON_IoT is held out
+# from all tuning. FedLC / FedRS: grid extension past the edges selected in v1 (fairness fix 2); the v1 edge values are
+# re-run here so the extended grid is compared on equal terms. A selection still on an edge is reported, not extended.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedavgm], seeds: [100], sweep: {method.server_beta1: [0.3, 0.5, 0.7, 0.9]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [feddecorr], seeds: [100], sweep: {method.decorr: [0.01, 0.1, 1.0, 3.0, 10.0]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedetf], seeds: [100], sweep: {method.head_scale: [2.0, 5.0, 10.0, 20.0, 40.0]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [ccvr], seeds: [100], sweep: {method.ccvr_lr: [0.01, 0.03, 0.1, 0.3]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [feddyn], seeds: [100], sweep: {method.feddyn_alpha: [0.001, 0.01, 0.1], fl.lr: [0.02, 0.05, 0.1]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedlc], seeds: [100], sweep: {method.tau: [0.01, 0.03, 0.1]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedrs], seeds: [100], sweep: {method.fedrs_alpha: [0.9, 0.95, 1.0]}}

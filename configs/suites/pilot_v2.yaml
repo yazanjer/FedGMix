@@ -1,0 +1,9 @@
+suite: pilot_v2
+# Checkpoint-1 pilot: main setting (K=20, alpha=0.1, rho=0.5, T=50), seeds 0-1, all on one GPU type.
+# sfspcl and scaffold are re-run here as same-GPU references. Grouped labels feed the go rule's
+# "no more than 0.5 pp loss on grouped labels" condition.
+groups:
+  - datasets: [ciciot2023, edgeiiot]
+    labels: [fine, grouped]
+    methods: [scaffold, sfspcl, sfspcl_m, sfspcl_adam, sfspcl_etf, sfspcl_ccvr, sfspcl_decorr]
+    seeds: [0, 1]

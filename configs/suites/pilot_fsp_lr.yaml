@@ -1,0 +1,3 @@
+suite: pilot_fsp_lr
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine, grouped], methods: [sfspcl], seeds: [0, 1], fixed: {fl.lr: 0.1}}

@@ -1,0 +1,6 @@
+suite: dp_check
+# Checkpoint 4 (pre-registered 2026-11-04, docs/DP_PREREG.md): DP release of the mixtures, corrected privacy guard,
+# and two referee ablations, on FRESH seeds 25-27 (never used before), three datasets, fine labels, main setting.
+groups:
+  - {datasets: [ciciot2023, edgeiiot, toniot], labels: [fine], methods: [fedmix_fit, fedmix_k1, fedmix_novirt], seeds: [25, 26, 27]}
+  - {datasets: [ciciot2023, edgeiiot, toniot], labels: [fine], methods: [fedmix_dp], seeds: [25, 26, 27], sweep: {method.vmix_dp_eps: [1.0, 4.0, 16.0, 64.0]}}

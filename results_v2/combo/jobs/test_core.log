@@ -1,0 +1,3 @@
+disjoint splits + SFS == pooled train scaler: OK
+class-aware aggregation limits: OK
+determinism + resume: OK

@@ -1,0 +1,4 @@
+suite: tune_v2_ext_decorr
+# Grid-extension rule: decorr selected 1.0 on the upper edge of {0.01..1.0}; extend upward.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_decorr], seeds: [100], sweep: {method.decorr: [3.0, 10.0]}}

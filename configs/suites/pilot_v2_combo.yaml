@@ -1,0 +1,7 @@
+suite: pilot_v2_combo
+# Checkpoint-1 option B: C3 + C1a combination, same setting, seeds and go rule as pilot_v2.
+# References (sfspcl, scaffold) come from pilot_v2 (same GPU type, same torch); sfspcl seed 0 on fine labels
+# is re-run here as a same-pod reproducibility check against the committed pilot_v2 results.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine, grouped], methods: [sfspcl_ccvr_m], seeds: [0, 1]}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl], seeds: [0]}

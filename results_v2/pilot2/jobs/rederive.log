@@ -1,0 +1,24 @@
+# SFS-PCL v2 pilot: independent re-derivation
+
+Runs indexed: 48; missing: 0; macro-F1 recompute mismatches: 0; GPU types: 1. **Two seeds: directions only.**
+
+## Test macro-F1 (mean of seeds 0, 1; per seed in brackets)
+
+| Method | ciciot2023 fine | ciciot2023 grouped | edgeiiot fine | edgeiiot grouped |
+|---|---|---|---|---|
+| SFS-PCL | 56.05 [56.57, 55.53] | 63.56 [63.70, 63.43] | 78.21 [77.60, 78.83] | 87.44 [88.22, 86.66] |
+| SCAFFOLD | 59.60 [56.87, 62.32] | 66.24 [64.85, 67.64] | 87.13 [85.48, 88.79] | 86.06 [81.84, 90.29] |
+| P1 SFS-PCL + momentum + FedNTD | 55.62 [57.20, 54.04] | 63.09 [63.38, 62.80] | 73.01 [73.33, 72.68] | 86.04 [86.61, 85.47] |
+| P2 SFS-PCL + FedCM | 56.09 [55.27, 56.91] | 63.06 [63.08, 63.05] | 77.50 [75.79, 79.21] | 86.54 [87.86, 85.22] |
+| P3 SFS-PCL + momentum + FedFA anchors | 56.19 [55.21, 57.18] | 62.36 [62.30, 62.43] | 80.95 [81.97, 79.93] | 87.41 [89.00, 85.81] |
+| P4 best(P1-P3) + guarded CCVR | 58.81 [59.41, 58.21] | 62.36 [62.30, 62.43] | 81.89 [83.85, 79.93] | 87.83 [89.66, 86.00] |
+
+## Go rule (fixed before the run)
+
+| Candidate | closure ciciot2023 | closure edgeiiot | grouped Δ vs SFS-PCL ciciot2023 (pp) | grouped Δ vs SFS-PCL edgeiiot (pp) | GO |
+|---|---|---|---|---|---|
+| P1 SFS-PCL + momentum + FedNTD | -12 % | -58 % | -0.48 | -1.40 | no |
+| P2 SFS-PCL + FedCM | 1 % | -8 % | -0.50 | -0.91 | no |
+| P3 SFS-PCL + momentum + FedFA anchors | 4 % | 31 % | -1.20 | -0.04 | no |
+| P4 best(P1-P3) + guarded CCVR | 78 % | 41 % | -1.20 | +0.38 | no |
+

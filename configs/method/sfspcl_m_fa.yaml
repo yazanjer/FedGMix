@@ -1,0 +1,18 @@
+# Pilot 2 candidate P3: SFS-PCL + server momentum (beta 0.7, from tune_v2) + FedFA feature anchors and classifier calibration.
+name: sfspcl_m_fa
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+server_opt: momentum
+server_lr: 1.0
+server_beta1: 0.7
+anchor: 0.1
+anchor_calib: true

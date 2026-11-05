@@ -1,0 +1,274 @@
+{
+  "run_id": "7e7c3d14c58b",
+  "identity": {
+    "dataset": "ciciot2023",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 0,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null,
+      "decorr": 1.0
+    }
+  },
+  "method_name": "sfspcl_decorr",
+  "suite": "pilot_v2",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "seed": 0,
+  "class_names": [
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Benign",
+    "Web",
+    "BruteForce"
+  ],
+  "train_class_counts": [
+    351012,
+    113199,
+    105024,
+    40159,
+    55508,
+    35004,
+    2810,
+    1446
+  ],
+  "client_train_sizes": [
+    29869,
+    46775,
+    23458,
+    38673,
+    47834,
+    36605,
+    35854,
+    40413,
+    43108,
+    34897,
+    19287,
+    36364,
+    57718,
+    15554,
+    36573,
+    47276,
+    22770,
+    38089,
+    34054,
+    18991
+  ],
+  "best_round": 50,
+  "best_val_macro_f1": 0.6161024267703092,
+  "test": {
+    "macro_f1": 0.6120012642683031,
+    "accuracy": 0.7418727299865665,
+    "balanced_accuracy": 0.6753795535208533,
+    "weighted_f1": 0.7603342863505519,
+    "tail_recall": 0.4075389718592808,
+    "tail_classes": [
+      7,
+      6
+    ],
+    "worst_client_f1_p10": 0.49742122252817966,
+    "mean_client_f1": 0.6853406025430157,
+    "per_class_recall": [
+      0.6416337285902504,
+      0.8971780431957423,
+      0.9950980392156863,
+      0.5859811452513967,
+      0.6867112569409389,
+      0.7813562712542509,
+      0.6585987261146496,
+      0.15647921760391198
+    ],
+    "per_class_f1": [
+      0.7668650911997328,
+      0.6068248171363394,
+      0.9765683804038354,
+      0.6780465633048836,
+      0.7506811519227453,
+      0.7208637076681739,
+      0.15555889875131637,
+      0.24060150375939848
+    ],
+    "per_class_support": [
+      100188,
+      32318,
+      29988,
+      11456,
+      15848,
+      9998,
+      785,
+      409
+    ],
+    "per_client_f1": [
+      0.6891753320773237,
+      0.6563030091480059,
+      0.7621280385754762,
+      0.7144790993858394,
+      0.6882432197086467,
+      0.987012987012987,
+      0.6992597769048985,
+      0.4487194220413664,
+      0.9813026901014832,
+      0.6206361091501258,
+      0.7384704776957621,
+      0.5435411672718966,
+      0.591512805121682,
+      0.6344602544214698,
+      0.7960112974811229,
+      0.6181241365194698,
+      0.44751308911505994,
+      0.905080476748799,
+      0.6820061286855171,
+      0.5028325336933811
+    ],
+    "n_test": 200990
+  },
+  "profile": {
+    "params": 54600,
+    "flops_per_sample": 106496,
+    "latency_ms_b1": 0.8460791152901947,
+    "latency_ms_b1024": 0.8167809655424207,
+    "train_time_s": 525.6160233484115,
+    "wall_time_s": 527.4540274143219,
+    "comm_up_MB": 109.20744,
+    "peak_rss_mb": 1522.7265625,
+    "peak_vram_mb": 286.15234375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.4605861245504203,
+      "val_acc": 0.7402049127278882,
+      "comm_up_MB": 10.92744,
+      "train_time_s": 55.7244319440797
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.5522654738304283,
+      "val_acc": 0.7325082393237282,
+      "comm_up_MB": 21.84744,
+      "train_time_s": 112.67470817803405
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.6060475677359752,
+      "val_acc": 0.7555484751028049,
+      "comm_up_MB": 32.76744,
+      "train_time_s": 161.57811157405376
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.611397306313133,
+      "val_acc": 0.7436997799528043,
+      "comm_up_MB": 43.68744,
+      "train_time_s": 215.09688298520632
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.6096666871087667,
+      "val_acc": 0.7348879352404091,
+      "comm_up_MB": 54.60744,
+      "train_time_s": 272.7282961772289
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.6127191813566295,
+      "val_acc": 0.7548913205818805,
+      "comm_up_MB": 65.52744,
+      "train_time_s": 326.8978604953736
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.6064844765524934,
+      "val_acc": 0.735375822687762,
+      "comm_up_MB": 76.44744,
+      "train_time_s": 377.0667053333018
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.6101834040023488,
+      "val_acc": 0.7353359951410393,
+      "comm_up_MB": 87.36744,
+      "train_time_s": 424.96318083046935
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.6008942433202058,
+      "val_acc": 0.7302181553871735,
+      "comm_up_MB": 98.28744,
+      "train_time_s": 474.5173945701681
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.6161024267703092,
+      "val_acc": 0.7407425846086446,
+      "comm_up_MB": 109.20744,
+      "train_time_s": 525.6160233484115
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 24
+    },
+    "device": "cuda",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "argv": [
+      "/workspace/src/code/src/fedsim/run.py",
+      "dataset=ciciot2023",
+      "task.labels=grouped",
+      "method=sfspcl_decorr",
+      "seed=0",
+      "suite=pilot_v2",
+      "fl.lr=0.05",
+      "method.decorr=1.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-10-31T21:30:51"
+  }
+}

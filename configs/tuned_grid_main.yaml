@@ -1,0 +1,28 @@
+# Written by scripts/select_hparams.py (validation macro-F1, tuning seed 100)
+all:
+  fl.lr: 0.05
+methods:
+  ccvr:
+    method.ccvr_lr: 0.3
+  fedavgm:
+    method.server_beta1: 0.3
+  feddecorr:
+    method.decorr: 1.0
+  feddyn:
+    fl.lr: 0.02
+    method.feddyn_alpha: 0.1
+  fedetf:
+    method.head_scale: 20.0
+  fedlc:
+    method.tau: 0.01
+  fedprox:
+    method.prox_mu: 0.01
+  fedrs:
+    method.fedrs_alpha: 1.0
+  sfspcl_caa:
+    method.beta: 0.01
+    method.tau: 1.0
+  sfspcl:
+    method.tau: 1.0
+  scaffold:
+    fl.lr: 0.02

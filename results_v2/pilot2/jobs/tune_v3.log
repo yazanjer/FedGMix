@@ -1,0 +1,34 @@
+[suite tune_v3] 32 entries, 32 unique, 32 pending, workers=10
+[1/32] ok  073f3854d6c9 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 0.1} | elapsed 8.9 min, eta 274.9 min
+[2/32] ok  a501fa4051f0 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 3.0} | elapsed 8.9 min, eta 133.0 min
+[3/32] ok  ca0beea542d3 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 0.3} | elapsed 8.9 min, eta 86.4 min
+[4/32] ok  eda2b680ea81 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 10.0} | elapsed 9.0 min, eta 62.8 min
+[5/32] ok  f98819954106 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 1.0} | elapsed 9.1 min, eta 49.0 min
+[6/32] ok  26a35285f3d6 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 1.0} | elapsed 15.5 min, eta 67.1 min
+[7/32] ok  26f178b6a08d {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 0.3} | elapsed 15.5 min, eta 55.5 min
+[8/32] ok  138d0726c8a0 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 10.0} | elapsed 15.7 min, eta 47.1 min
+[9/32] ok  3a69b517baaa {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 0.1} | elapsed 15.8 min, eta 40.4 min
+[10/32] ok  561e57d75029 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_ntd', 'seed': 100, 'method.ntd': 3.0} | elapsed 15.8 min, eta 34.8 min
+[11/32] ok  288368d42515 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.02} | elapsed 18.8 min, eta 36.0 min
+[12/32] ok  925d41c79b21 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.05} | elapsed 19.0 min, eta 31.6 min
+[13/32] ok  87b8c62af7c2 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.1} | elapsed 19.1 min, eta 27.9 min
+[14/32] ok  73c210bd6c85 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.2} | elapsed 19.2 min, eta 24.7 min
+[15/32] ok  bbd16e64a815 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.5} | elapsed 19.3 min, eta 21.9 min
+[16/32] ok  5706c4bc9444 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.02} | elapsed 21.2 min, eta 21.2 min
+[17/32] ok  ce9b578050d4 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.05} | elapsed 21.5 min, eta 18.9 min
+[18/32] ok  836b0fdcb637 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.1} | elapsed 21.5 min, eta 16.7 min
+[19/32] ok  1af5f437b555 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.2} | elapsed 21.5 min, eta 14.7 min
+[20/32] ok  02378102fa0b {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.5} | elapsed 24.3 min, eta 14.6 min
+[21/32] ok  b4f20e4cb8f2 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.8} | elapsed 24.4 min, eta 12.8 min
+[22/32] ok  4bee6d77e19b {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_cm', 'seed': 100, 'method.fedcm_alpha': 0.8} | elapsed 24.9 min, eta 11.3 min
+[23/32] ok  cfcc28b1726f {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.001} | elapsed 28.6 min, eta 11.2 min
+[24/32] ok  1ecf5b31d0f8 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.01} | elapsed 28.7 min, eta 9.6 min
+[25/32] ok  cf82af04d8fb {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.001} | elapsed 31.0 min, eta 8.7 min
+[26/32] ok  ee6217ce8ff4 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.1} | elapsed 31.0 min, eta 7.2 min
+[27/32] ok  9d00c1cdd366 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.01} | elapsed 31.1 min, eta 5.8 min
+[28/32] ok  ec5c437159b7 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 0.1} | elapsed 31.3 min, eta 4.5 min
+[29/32] ok  4138289a145d {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 1.0} | elapsed 31.3 min, eta 3.2 min
+[30/32] ok  0602c26f9c82 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 3.0} | elapsed 31.6 min, eta 2.1 min
+[31/32] ok  e99b40a4efa4 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 1.0} | elapsed 32.5 min, eta 1.0 min
+[32/32] ok  bfe72161e547 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_m_fa', 'seed': 100, 'method.anchor': 3.0} | elapsed 32.6 min, eta 0.0 min
+[suite tune_v3] finished; failed: []

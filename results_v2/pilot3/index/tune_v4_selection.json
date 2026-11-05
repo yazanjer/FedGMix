@@ -1,0 +1,14 @@
+{
+ "all_scores": {
+  "sfspcl_v|{'method.virtual': 0.25}": 0.6968970266220056,
+  "sfspcl_v|{'method.virtual': 0.5}": 0.6996552565239098,
+  "sfspcl_v|{'method.virtual': 1.0}": 0.70215189015435,
+  "sfspcl_v|{'method.virtual': 2.0}": 0.7011297770621994
+ },
+ "selected": {
+  "sfspcl_v": {
+   "val_macro_f1_mean": 0.7022,
+   "method.virtual": 1.0
+  }
+ }
+}

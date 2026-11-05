@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "FedGMix: code, configurations and results"
+version: 1.0.0
+doi: 10.5281/zenodo.23986522
+date-released: 2026-11-05
+license: MIT
+repository-code: "https://github.com/yazanjer/FedGMix"
+authors:
+  - family-names: Fahad
+    given-names: Ahmed
+    affiliation: "Imam Alkadhim University College"
+  - family-names: Alomari
+    given-names: Mohammed F.
+    affiliation: "Imam Alkadhim University College"
+  - family-names: Aljeroudi
+    given-names: Yazan
+    affiliation: "International Islamic University Malaysia; Al-Farabi University"
+    orcid: "https://orcid.org/0000-0002-4894-6001"

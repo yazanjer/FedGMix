@@ -1,0 +1,10 @@
+[
+ {
+  "suite": "repro_v3",
+  "run_id": "c3feb5c90cf1",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 0
+ }
+]

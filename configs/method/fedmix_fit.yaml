@@ -1,0 +1,24 @@
+# FedGMix with the corrected privacy guard: a component is shared only if it covers >= vmix_min flows of the
+# FITTING sample (the earlier guard multiplied the weight by the full class count when the fit used a subsample).
+name: fedmix_fit
+norm: global
+agg: fedavg
+beta: 0.0
+loss: ce
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+virtual: 1.0
+vmix_k: 8
+vmix_min: 50
+vmix_cap: 5000
+ccvr: true
+ccvr_samples: 2000
+ccvr_epochs: 10
+ccvr_lr: 0.1
+ccvr_guard: true
+vmix_cover_fit: true

@@ -1,0 +1,272 @@
+{
+  "run_id": "4f0467999e67",
+  "identity": {
+    "dataset": "ciciot2023",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 1,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.02,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "local",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "ce",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": true,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": 0.0
+    }
+  },
+  "method_name": "scaffold",
+  "suite": "pilot_v2",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "seed": 1,
+  "class_names": [
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Benign",
+    "Web",
+    "BruteForce"
+  ],
+  "train_class_counts": [
+    351006,
+    113205,
+    105032,
+    40163,
+    55513,
+    35005,
+    2810,
+    1446
+  ],
+  "client_train_sizes": [
+    35883,
+    28974,
+    57562,
+    35887,
+    24506,
+    18283,
+    28086,
+    21759,
+    36866,
+    30859,
+    40751,
+    37841,
+    61707,
+    33161,
+    12553,
+    53590,
+    30198,
+    47216,
+    35486,
+    33012
+  ],
+  "best_round": 40,
+  "best_val_macro_f1": 0.6753236898490375,
+  "test": {
+    "macro_f1": 0.6730657765948932,
+    "accuracy": 0.8695450994830562,
+    "balanced_accuracy": 0.6595765472554848,
+    "weighted_f1": 0.8681853938361301,
+    "tail_recall": 0.25987482658006555,
+    "tail_classes": [
+      7,
+      6
+    ],
+    "worst_client_f1_p10": 0.507650918439274,
+    "mean_client_f1": 0.7143284984446325,
+    "per_class_recall": [
+      0.924738265616735,
+      0.8233328175769766,
+      0.9875937968984492,
+      0.8454418442193503,
+      0.7031614816684546,
+      0.47259451890378074,
+      0.3486005089058524,
+      0.17114914425427874
+    ],
+    "per_class_f1": [
+      0.9313003186217849,
+      0.802618480195481,
+      0.9893755637967325,
+      0.739027555148462,
+      0.6951124419076136,
+      0.5694829456430035,
+      0.36533333333333334,
+      0.29227557411273486
+    ],
+    "per_class_support": [
+      100197,
+      32315,
+      29985,
+      11452,
+      15847,
+      9998,
+      786,
+      409
+    ],
+    "per_client_f1": [
+      0.927199455696865,
+      0.7392005469495894,
+      0.6416373878078951,
+      0.8199708461896055,
+      0.6326934025088796,
+      0.6406038755804652,
+      0.5752623299777773,
+      0.6944094483739726,
+      0.9904441272233333,
+      0.3916748995962629,
+      0.8276795998195488,
+      0.9949318826428605,
+      0.7463062407835125,
+      0.5205371427551642,
+      0.7265138501251824,
+      0.7228551839408262,
+      0.6968645206708685,
+      0.96212486460271,
+      0.656203431575279,
+      0.3794569320720548
+    ],
+    "n_test": 200989
+  },
+  "profile": {
+    "params": 54600,
+    "flops_per_sample": 106496,
+    "latency_ms_b1": 0.5134030350018293,
+    "latency_ms_b1024": 0.4947886755689979,
+    "train_time_s": 413.58147648582235,
+    "wall_time_s": 415.34285950660706,
+    "comm_up_MB": 218.4,
+    "peak_rss_mb": 1445.16015625,
+    "peak_vram_mb": 293.9208984375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.4418437644001347,
+      "val_acc": 0.7346538400254939,
+      "comm_up_MB": 21.84,
+      "train_time_s": 40.53081437735818
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.5406654494365092,
+      "val_acc": 0.8070725780752072,
+      "comm_up_MB": 43.68,
+      "train_time_s": 80.84566536778584
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.5243228060137007,
+      "val_acc": 0.7840085245379222,
+      "comm_up_MB": 65.52,
+      "train_time_s": 119.427200531587
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.5767258721152295,
+      "val_acc": 0.8113846398980242,
+      "comm_up_MB": 87.36,
+      "train_time_s": 158.4978891655337
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.6027524703533741,
+      "val_acc": 0.8377848151688974,
+      "comm_up_MB": 109.2,
+      "train_time_s": 200.9464333069045
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.6190154611432584,
+      "val_acc": 0.8669235978330146,
+      "comm_up_MB": 131.04,
+      "train_time_s": 245.14169803564437
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.6599912598139067,
+      "val_acc": 0.8514878107074569,
+      "comm_up_MB": 152.88,
+      "train_time_s": 285.45368569903076
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.6753236898490375,
+      "val_acc": 0.8697717495219885,
+      "comm_up_MB": 174.72,
+      "train_time_s": 327.9299395279959
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.6607900247440328,
+      "val_acc": 0.853648820905035,
+      "comm_up_MB": 196.56,
+      "train_time_s": 371.0984148008283
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.6681512324299278,
+      "val_acc": 0.8555409496494583,
+      "comm_up_MB": 218.4,
+      "train_time_s": 413.58147648582235
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 24
+    },
+    "device": "cuda",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "argv": [
+      "/workspace/src/code/src/fedsim/run.py",
+      "dataset=ciciot2023",
+      "task.labels=grouped",
+      "method=scaffold",
+      "seed=1",
+      "suite=pilot_v2",
+      "fl.lr=0.02",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-10-31T21:13:55"
+  }
+}

@@ -1,0 +1,5 @@
+suite: repro_v3
+# Reproducibility guard for pilot 2: after the v3 code changes, SFS-PCL seed 0 (fine, CICIoT2023) must keep its
+# run_id (c3feb5c90cf1) and reproduce the committed pilot_v2 test macro-F1 bit-exactly.
+groups:
+  - {datasets: [ciciot2023], labels: [fine], methods: [sfspcl], seeds: [0]}

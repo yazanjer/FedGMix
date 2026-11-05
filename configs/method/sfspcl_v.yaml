@@ -1,0 +1,17 @@
+# Pilot 3 candidate V: SFS-PCL + class-conditional mixture statistics (one-shot, guarded) -> balanced virtual samples.
+name: sfspcl_v
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+virtual: 0.5
+vmix_k: 8
+vmix_min: 50
+vmix_cap: 5000

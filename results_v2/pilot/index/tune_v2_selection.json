@@ -1,0 +1,53 @@
+{
+ "all_scores": {
+  "sfspcl_m|{'method.server_beta1': 0.3}": 0.6297031322092637,
+  "sfspcl_m|{'method.server_beta1': 0.5}": 0.6518095947419167,
+  "sfspcl_m|{'method.server_beta1': 0.7}": 0.6790908030180374,
+  "sfspcl_m|{'method.server_beta1': 0.9}": 0.6482877540265835,
+  "sfspcl_adam|{'method.server_lr': 0.001}": 0.5590979097669813,
+  "sfspcl_adam|{'method.server_lr': 0.003}": 0.6198564844932708,
+  "sfspcl_adam|{'method.server_lr': 0.01}": 0.658909170210072,
+  "sfspcl_adam|{'method.server_lr': 0.03}": 0.6435404041886809,
+  "sfspcl_adam|{'method.server_lr': 0.1}": 0.6051941178955444,
+  "sfspcl_etf|{'method.head_scale': 2.0}": 0.6082099232454351,
+  "sfspcl_etf|{'method.head_scale': 5.0}": 0.6360984437623398,
+  "sfspcl_etf|{'method.head_scale': 10.0}": 0.6535886971881388,
+  "sfspcl_etf|{'method.head_scale': 20.0}": 0.6517394715222097,
+  "sfspcl_etf|{'method.head_scale': 40.0}": 0.6183930155359694,
+  "sfspcl_ccvr|{'method.ccvr_lr': 0.003}": 0.6971221691642157,
+  "sfspcl_ccvr|{'method.ccvr_lr': 0.01}": 0.700008181986695,
+  "sfspcl_ccvr|{'method.ccvr_lr': 0.03}": 0.7033288686094472,
+  "sfspcl_ccvr|{'method.ccvr_lr': 0.1}": 0.7155466355742358,
+  "sfspcl_ccvr|{'method.ccvr_lr': 0.3}": 0.7117778261876966,
+  "sfspcl_decorr|{'method.decorr': 0.01}": 0.633443714158938,
+  "sfspcl_decorr|{'method.decorr': 0.03}": 0.6366898487449751,
+  "sfspcl_decorr|{'method.decorr': 0.1}": 0.6460384746084111,
+  "sfspcl_decorr|{'method.decorr': 0.3}": 0.646732940599587,
+  "sfspcl_decorr|{'method.decorr': 1.0}": 0.6489634905064754
+ },
+ "selected": {
+  "sfspcl_m": {
+   "val_macro_f1_mean": 0.6791,
+   "method.server_beta1": 0.7
+  },
+  "sfspcl_adam": {
+   "val_macro_f1_mean": 0.6589,
+   "method.server_lr": 0.01
+  },
+  "sfspcl_etf": {
+   "val_macro_f1_mean": 0.6536,
+   "method.head_scale": 10.0
+  },
+  "sfspcl_ccvr": {
+   "val_macro_f1_mean": 0.7155,
+   "method.ccvr_lr": 0.1
+  },
+  "sfspcl_decorr": {
+   "val_macro_f1_mean": 0.649,
+   "method.decorr": 1.0,
+   "on_grid_edge": [
+    "method.decorr"
+   ]
+  }
+ }
+}

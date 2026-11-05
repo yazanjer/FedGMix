@@ -1,0 +1,6 @@
+v3 defaults reproduce SFS-PCL bit-exactly: OK
+NTD loss: zero at equality, ignores true class, shift-invariant: OK
+NTD / FedCM / anchors each change training: OK
+FedCM: round 1 == FedAvg, Delta covers all trainable parameters: OK
+anchors: orthonormal init, updated by the server, upload accounted: OK
+v3 determinism + resume (FedCM delta and anchors checkpointed): OK

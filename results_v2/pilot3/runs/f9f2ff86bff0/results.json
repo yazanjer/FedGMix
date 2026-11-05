@@ -1,0 +1,264 @@
+{
+  "run_id": "f9f2ff86bff0",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 5,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null
+    }
+  },
+  "method_name": "sfspcl",
+  "suite": "pilot_v4",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "seed": 5,
+  "class_names": [
+    "Normal",
+    "DDoS",
+    "Injection",
+    "Malware",
+    "InformationGathering",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70013,
+    186620,
+    71904,
+    58571,
+    49617,
+    252
+  ],
+  "client_train_sizes": [
+    20282,
+    10761,
+    13977,
+    24918,
+    31746,
+    34689,
+    3502,
+    5793,
+    9090,
+    21028,
+    7570,
+    48331,
+    36168,
+    25002,
+    27491,
+    22915,
+    22490,
+    17202,
+    23165,
+    30857
+  ],
+  "best_round": 45,
+  "best_val_macro_f1": 0.8360629497392065,
+  "test": {
+    "macro_f1": 0.8280931177198768,
+    "accuracy": 0.831918764476289,
+    "balanced_accuracy": 0.8533073915669961,
+    "weighted_f1": 0.8363847368596994,
+    "tail_recall": 0.9103776439616305,
+    "tail_classes": [
+      5,
+      4
+    ],
+    "worst_client_f1_p10": 0.583383140294085,
+    "mean_client_f1": 0.8099544716311227,
+    "per_class_recall": [
+      0.9998999649877457,
+      0.7929895669143586,
+      0.9609896264549749,
+      0.5452099031216362,
+      0.8921838593518322,
+      0.9285714285714286
+    ],
+    "per_class_f1": [
+      0.9999499799919968,
+      0.8740253562490952,
+      0.7940602426608181,
+      0.7045595054095827,
+      0.6804706642612887,
+      0.9154929577464789
+    ],
+    "per_class_support": [
+      19993,
+      53292,
+      20533,
+      16722,
+      14163,
+      70
+    ],
+    "per_client_f1": [
+      0.6960900986719467,
+      0.5902160056911827,
+      0.6713229687842214,
+      1.0,
+      0.9544404799647604,
+      0.5,
+      0.5218873517202053,
+      0.64982305527942,
+      0.6908812330602014,
+      0.7326584460558058,
+      0.8606174256186563,
+      0.9999275729702325,
+      1.0,
+      1.0,
+      1.0,
+      0.8554133158064406,
+      0.944549412634519,
+      0.738911868416639,
+      0.8132082308978733,
+      0.9791419670503481
+    ],
+    "n_test": 124773
+  },
+  "profile": {
+    "params": 67014,
+    "flops_per_sample": 131328,
+    "latency_ms_b1": 1.0700294352136552,
+    "latency_ms_b1024": 1.0751277604140341,
+    "train_time_s": 170.76605806779116,
+    "vmix_components": null,
+    "wall_time_s": 172.2338674068451,
+    "comm_up_MB": 134.04328,
+    "peak_rss_mb": 1496.453125,
+    "peak_vram_mb": 330.099609375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.7498768838486449,
+      "val_acc": 0.7645256996231257,
+      "comm_up_MB": 13.41808,
+      "train_time_s": 17.80454978812486
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.8093537170305108,
+      "val_acc": 0.8141608531793761,
+      "comm_up_MB": 26.82088,
+      "train_time_s": 33.857666216092184
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.8247077877490981,
+      "val_acc": 0.8162777644134391,
+      "comm_up_MB": 40.22368,
+      "train_time_s": 50.69853924238123
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.80874768973415,
+      "val_acc": 0.786400449041777,
+      "comm_up_MB": 53.62648,
+      "train_time_s": 70.11405621329322
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.814801951814096,
+      "val_acc": 0.7922059177291316,
+      "comm_up_MB": 67.02928,
+      "train_time_s": 87.07778380345553
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.8272795453395263,
+      "val_acc": 0.8200465078983241,
+      "comm_up_MB": 80.43208,
+      "train_time_s": 103.44141151360236
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.8303552911807436,
+      "val_acc": 0.8223558656082111,
+      "comm_up_MB": 93.83488,
+      "train_time_s": 119.36062991572544
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.8153581386775602,
+      "val_acc": 0.8033678133269184,
+      "comm_up_MB": 107.23768,
+      "train_time_s": 135.29722007294185
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.8360629497392065,
+      "val_acc": 0.8325876032395156,
+      "comm_up_MB": 120.64048,
+      "train_time_s": 152.5637818418909
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.8057601358282863,
+      "val_acc": 0.7827760404137599,
+      "comm_up_MB": 134.04328,
+      "train_time_s": 170.76605806779116
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 64
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=grouped",
+      "method=sfspcl",
+      "seed=5",
+      "suite=pilot_v4",
+      "fl.lr=0.05",
+      "method.tau=1.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-11-02T10:22:04"
+  }
+}

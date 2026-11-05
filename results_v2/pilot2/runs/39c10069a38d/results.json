@@ -1,0 +1,262 @@
+{
+  "run_id": "39c10069a38d",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 3,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.02,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "local",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "ce",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": true,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": 0.0
+    }
+  },
+  "method_name": "scaffold",
+  "suite": "pilot_v3",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "seed": 3,
+  "class_names": [
+    "Normal",
+    "DDoS",
+    "Injection",
+    "Malware",
+    "InformationGathering",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70014,
+    186623,
+    71925,
+    58571,
+    49615,
+    254
+  ],
+  "client_train_sizes": [
+    53655,
+    21862,
+    22355,
+    20788,
+    35417,
+    17353,
+    13141,
+    10964,
+    23422,
+    23061,
+    15009,
+    2105,
+    5561,
+    23229,
+    25893,
+    21900,
+    33909,
+    15254,
+    29798,
+    22326
+  ],
+  "best_round": 50,
+  "best_val_macro_f1": 0.9128955190569901,
+  "test": {
+    "macro_f1": 0.9028897393510792,
+    "accuracy": 0.9258478482169337,
+    "balanced_accuracy": 0.8946837443588325,
+    "weighted_f1": 0.92318405699047,
+    "tail_recall": 0.9258806772834989,
+    "tail_classes": [
+      5,
+      4
+    ],
+    "worst_client_f1_p10": 0.6837495776519753,
+    "mean_client_f1": 0.8622444848520455,
+    "per_class_recall": [
+      0.9569349272245286,
+      0.9980108091878096,
+      0.9798762364176777,
+      0.5815191387559808,
+      0.9387178763061282,
+      0.9130434782608695
+    ],
+    "per_class_f1": [
+      0.9779936102236422,
+      0.9874668102567912,
+      0.8331952270467352,
+      0.7309976693481693,
+      0.9612145309958431,
+      0.9264705882352942
+    ],
+    "per_class_support": [
+      19993,
+      53288,
+      20523,
+      16720,
+      14164,
+      69
+    ],
+    "per_client_f1": [
+      0.9711735293130642,
+      0.81761351188803,
+      0.9830409963075779,
+      0.6899015079647602,
+      0.6283822048369111,
+      0.9998084640302887,
+      0.7931162221383173,
+      0.7515926049700244,
+      0.9922499702815001,
+      1.0,
+      0.7288313123394397,
+      0.8433701454568637,
+      0.8685772343402796,
+      0.9807550818395157,
+      0.602503289751732,
+      1.0,
+      0.7679006944261988,
+      0.8463816418437244,
+      0.984461784340649,
+      0.9952295009720333
+    ],
+    "n_test": 124757
+  },
+  "profile": {
+    "params": 67014,
+    "flops_per_sample": 131328,
+    "latency_ms_b1": 0.99297815002501,
+    "latency_ms_b1024": 1.0081571608316153,
+    "train_time_s": 272.1863065017387,
+    "wall_time_s": 273.6812126636505,
+    "comm_up_MB": 268.056,
+    "peak_rss_mb": 1470.59375,
+    "peak_vram_mb": 337.36865234375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.5627423598126112,
+      "val_acc": 0.7398389632053379,
+      "comm_up_MB": 26.8056,
+      "train_time_s": 25.690379936248064
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.7539094040408884,
+      "val_acc": 0.8362364867032368,
+      "comm_up_MB": 53.6112,
+      "train_time_s": 52.74363207560964
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.8113609329495842,
+      "val_acc": 0.8237577390690661,
+      "comm_up_MB": 80.4168,
+      "train_time_s": 79.69681447558105
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.8355406495261711,
+      "val_acc": 0.8538478811792256,
+      "comm_up_MB": 107.2224,
+      "train_time_s": 102.72779827471823
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.8713267501935742,
+      "val_acc": 0.8873063227793283,
+      "comm_up_MB": 134.028,
+      "train_time_s": 127.89850287488662
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.8795967846571348,
+      "val_acc": 0.8927757995701409,
+      "comm_up_MB": 160.8336,
+      "train_time_s": 154.58641516882926
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.8691228337339266,
+      "val_acc": 0.8818689250312771,
+      "comm_up_MB": 187.6392,
+      "train_time_s": 185.3972675651312
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.8818692195223851,
+      "val_acc": 0.899223687165175,
+      "comm_up_MB": 214.4448,
+      "train_time_s": 214.25144757027738
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.8861431831357786,
+      "val_acc": 0.9002341770121579,
+      "comm_up_MB": 241.2504,
+      "train_time_s": 242.31674153497443
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.9128955190569901,
+      "val_acc": 0.926105924999198,
+      "comm_up_MB": 268.056,
+      "train_time_s": 272.1863065017387
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 64
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=grouped",
+      "method=scaffold",
+      "seed=3",
+      "suite=pilot_v3",
+      "fl.lr=0.02",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-11-01T11:42:58"
+  }
+}

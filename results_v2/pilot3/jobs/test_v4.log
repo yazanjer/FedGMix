@@ -1,0 +1,4 @@
+virtual=0 reproduces SFS-PCL bit-exactly: OK
+mixtures: 31 guarded components, weights normalised, upload accounted: OK
+virtual samples: deterministic, class-balanced, centred on the mixtures: OK
+SFS-PCL-V: changes training, deterministic, resumes exactly: OK

@@ -1,0 +1,14 @@
+# v2 candidate C4: SFS-PCL + FedDecorr feature-decorrelation regulariser.
+name: sfspcl_decorr
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+decorr: 0.1

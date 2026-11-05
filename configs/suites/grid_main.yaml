@@ -1,0 +1,8 @@
+suite: grid_main
+# Full grid, checkpoint 2 (pre-registered 2026-11-02): main comparison + ablation of SFS-PCL-V on FRESH seeds 10-14
+# (never used before), three datasets (TON_IoT held out from tuning), fine and grouped labels, one GPU type (L4).
+groups:
+  - datasets: [ciciot2023, edgeiiot, toniot]
+    labels: [fine, grouped]
+    methods: [sfspcl_v_ccvr, sfspcl_v, sfspcl_ccvrg, sfspcl_v_ccvr_ce, sfspcl_v_ccvr_ln, sfspcl, scaffold, feddyn, fedavg, fedprox, fedlc, fedrs, statavg, fedavgm, feddecorr, fedetf, ccvr, fedprox_sfs, scaffold_sfs, fedlc_sfs, fedrs_sfs, fedbn, fedbn_sfs, centralised]
+    seeds: [10, 11, 12, 13, 14]

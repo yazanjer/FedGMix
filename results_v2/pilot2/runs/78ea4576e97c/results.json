@@ -1,0 +1,276 @@
+{
+  "run_id": "78ea4576e97c",
+  "identity": {
+    "dataset": "ciciot2023",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 2,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null,
+      "server_opt": "momentum",
+      "server_beta1": 0.7,
+      "ntd": 0.1
+    }
+  },
+  "method_name": "sfspcl_m_ntd",
+  "suite": "pilot_v3",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "seed": 2,
+  "class_names": [
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Benign",
+    "Web",
+    "BruteForce"
+  ],
+  "train_class_counts": [
+    351006,
+    113204,
+    105025,
+    40160,
+    55502,
+    35004,
+    2811,
+    1443
+  ],
+  "client_train_sizes": [
+    38238,
+    43481,
+    44417,
+    23038,
+    38184,
+    35381,
+    31713,
+    48829,
+    15561,
+    35889,
+    27261,
+    9096,
+    36448,
+    35275,
+    35446,
+    37726,
+    51022,
+    55701,
+    26003,
+    35446
+  ],
+  "best_round": 35,
+  "best_val_macro_f1": 0.6285653868115202,
+  "test": {
+    "macro_f1": 0.6337582904592318,
+    "accuracy": 0.7902843837688313,
+    "balanced_accuracy": 0.6496792837272181,
+    "weighted_f1": 0.7999611945103282,
+    "tail_recall": 0.27433555539003923,
+    "tail_classes": [
+      7,
+      6
+    ],
+    "worst_client_f1_p10": 0.4473526366501985,
+    "mean_client_f1": 0.6856763892764313,
+    "per_class_recall": [
+      0.786230437559885,
+      0.7276581260056938,
+      0.9936641323195945,
+      0.7426451331296378,
+      0.6669190007570023,
+      0.7316463292658532,
+      0.36862244897959184,
+      0.18004866180048662
+    ],
+    "per_class_f1": [
+      0.8386770506726003,
+      0.6105492736501837,
+      0.9944102384408736,
+      0.722002970507108,
+      0.7492558469170801,
+      0.6804651162790698,
+      0.16955118803168084,
+      0.30515463917525776
+    ],
+    "per_class_support": [
+      100192,
+      32316,
+      29988,
+      11455,
+      15852,
+      9998,
+      784,
+      411
+    ],
+    "per_client_f1": [
+      0.915425669365755,
+      0.43523944156251776,
+      0.58254767039915,
+      0.7072601650758915,
+      0.6401716208256919,
+      0.8267920777926809,
+      0.5216639912585386,
+      0.6897838241703881,
+      0.41945357280512025,
+      0.44869854721549635,
+      0.5339256042889593,
+      0.7534529451695886,
+      0.9612211408031703,
+      0.6924650929764059,
+      0.944298165368571,
+      0.6860363108500986,
+      0.8831039172859387,
+      0.662950517263585,
+      0.6182235271055262,
+      0.7908139839455528
+    ],
+    "n_test": 200996
+  },
+  "profile": {
+    "params": 54600,
+    "flops_per_sample": 106496,
+    "latency_ms_b1": 0.9891822701320052,
+    "latency_ms_b1024": 0.9996575757395475,
+    "train_time_s": 1014.7136517132167,
+    "wall_time_s": 1016.1785933971405,
+    "comm_up_MB": 109.20744,
+    "peak_rss_mb": 1623.84375,
+    "peak_vram_mb": 284.8115234375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.4596279740010468,
+      "val_acc": 0.710705537965231,
+      "comm_up_MB": 10.92744,
+      "train_time_s": 108.38129458599724
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.5949349246093066,
+      "val_acc": 0.7754346137762113,
+      "comm_up_MB": 21.84744,
+      "train_time_s": 209.43239571596496
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.6159987865463379,
+      "val_acc": 0.7866559133361213,
+      "comm_up_MB": 32.76744,
+      "train_time_s": 312.72791679087095
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.6159069730761435,
+      "val_acc": 0.7866957404862895,
+      "comm_up_MB": 43.68744,
+      "train_time_s": 410.2172388806939
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.61249560686669,
+      "val_acc": 0.7778142859987653,
+      "comm_up_MB": 54.60744,
+      "train_time_s": 510.1314067267813
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.6242711521284208,
+      "val_acc": 0.7864368640101957,
+      "comm_up_MB": 65.52744,
+      "train_time_s": 620.0423008347861
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.6285653868115202,
+      "val_acc": 0.7913455602684349,
+      "comm_up_MB": 76.44744,
+      "train_time_s": 724.4786970356945
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.6140835638267824,
+      "val_acc": 0.7455941215126352,
+      "comm_up_MB": 87.36744,
+      "train_time_s": 819.6723611329217
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.6247891248441081,
+      "val_acc": 0.793117868450923,
+      "comm_up_MB": 98.28744,
+      "train_time_s": 914.7077851549257
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.6200996730439112,
+      "val_acc": 0.7659955791863313,
+      "comm_up_MB": 109.20744,
+      "train_time_s": 1014.7136517132167
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 64
+    },
+    "device": "cuda",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "argv": [
+      "/workspace/code/src/fedsim/run.py",
+      "dataset=ciciot2023",
+      "task.labels=grouped",
+      "method=sfspcl_m_ntd",
+      "seed=2",
+      "suite=pilot_v3",
+      "fl.lr=0.05",
+      "method.ntd=0.1",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-11-01T11:35:16"
+  }
+}

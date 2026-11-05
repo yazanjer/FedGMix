@@ -1,0 +1,3 @@
+[suite repro_v3] 1 entries, 1 unique, 1 pending, workers=1
+[1/1] ok  c3feb5c90cf1 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl', 'seed': 0} | elapsed 7.1 min, eta 0.0 min
+[suite repro_v3] finished; failed: []

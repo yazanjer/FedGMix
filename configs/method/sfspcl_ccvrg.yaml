@@ -1,0 +1,18 @@
+# Ablation of SFS-PCL-V: without virtual samples (SFS-PCL + guarded CCVR).
+name: sfspcl_ccvrg
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+ccvr: true
+ccvr_samples: 2000
+ccvr_epochs: 10
+ccvr_lr: 0.1
+ccvr_guard: true

@@ -1,0 +1,14 @@
+# Baseline FedDecorr (Shi et al., ICLR 2023): FedAvg + feature decorrelation.
+name: feddecorr
+norm: local
+agg: fedavg
+beta: 0.0
+loss: ce
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+decorr: 0.1

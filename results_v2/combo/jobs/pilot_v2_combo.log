@@ -1,0 +1,12 @@
+[suite pilot_v2_combo] 10 entries, 10 unique, 10 pending, workers=10
+[1/10] ok  65b2e9befc10 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_ccvr_m', 'seed': 0} | elapsed 9.4 min, eta 84.6 min
+[2/10] ok  a300317e895c {'dataset': 'edgeiiot', 'labels': 'grouped', 'method': 'sfspcl_ccvr_m', 'seed': 0} | elapsed 9.4 min, eta 37.6 min
+[3/10] ok  d3501dff0c54 {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl', 'seed': 0} | elapsed 9.5 min, eta 22.1 min
+[4/10] ok  9f0b0aef0c1c {'dataset': 'edgeiiot', 'labels': 'fine', 'method': 'sfspcl_ccvr_m', 'seed': 1} | elapsed 9.5 min, eta 14.3 min
+[5/10] ok  42d68a264b93 {'dataset': 'edgeiiot', 'labels': 'grouped', 'method': 'sfspcl_ccvr_m', 'seed': 1} | elapsed 9.6 min, eta 9.6 min
+[6/10] ok  0609e0f4e6ca {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_ccvr_m', 'seed': 0} | elapsed 11.9 min, eta 8.0 min
+[7/10] ok  379cfef2b17e {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl_ccvr_m', 'seed': 1} | elapsed 12.0 min, eta 5.1 min
+[8/10] ok  bebe709b3739 {'dataset': 'ciciot2023', 'labels': 'grouped', 'method': 'sfspcl_ccvr_m', 'seed': 1} | elapsed 12.3 min, eta 3.1 min
+[9/10] ok  c4104f476943 {'dataset': 'ciciot2023', 'labels': 'grouped', 'method': 'sfspcl_ccvr_m', 'seed': 0} | elapsed 12.5 min, eta 1.4 min
+[10/10] ok  c3feb5c90cf1 {'dataset': 'ciciot2023', 'labels': 'fine', 'method': 'sfspcl', 'seed': 0} | elapsed 12.5 min, eta 0.0 min
+[suite pilot_v2_combo] finished; failed: []

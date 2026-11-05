@@ -1,0 +1,273 @@
+{
+  "run_id": "e62e2a222361",
+  "identity": {
+    "dataset": "ciciot2023",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "timing_run": false,
+    "labels": "grouped",
+    "seed": 0,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.1,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null
+    }
+  },
+  "method_name": "sfspcl",
+  "suite": "pilot_fsp_lr",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "seed": 0,
+  "class_names": [
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Benign",
+    "Web",
+    "BruteForce"
+  ],
+  "train_class_counts": [
+    351012,
+    113199,
+    105024,
+    40159,
+    55508,
+    35004,
+    2810,
+    1446
+  ],
+  "client_train_sizes": [
+    29869,
+    46775,
+    23458,
+    38673,
+    47834,
+    36605,
+    35854,
+    40413,
+    43108,
+    34897,
+    19287,
+    36364,
+    57718,
+    15554,
+    36573,
+    47276,
+    22770,
+    38089,
+    34054,
+    18991
+  ],
+  "best_round": 50,
+  "best_val_macro_f1": 0.6380020795415038,
+  "test": {
+    "macro_f1": 0.6341556824312558,
+    "accuracy": 0.8047664062888701,
+    "balanced_accuracy": 0.6758491743008834,
+    "weighted_f1": 0.8157474646936501,
+    "tail_recall": 0.39288929033061837,
+    "tail_classes": [
+      7,
+      6
+    ],
+    "worst_client_f1_p10": 0.5463399585129555,
+    "mean_client_f1": 0.7332052867246841,
+    "per_class_recall": [
+      0.8176128877709905,
+      0.7437960269818676,
+      0.9948312658396692,
+      0.589036312849162,
+      0.6672766279656739,
+      0.8084616923384677,
+      0.6292993630573248,
+      0.15647921760391198
+    ],
+    "per_class_f1": [
+      0.8605059142382924,
+      0.6582146768893757,
+      0.9740433590178921,
+      0.6898384788386833,
+      0.7471122257939171,
+      0.7297431499119758,
+      0.14544383924628293,
+      0.26834381551362685
+    ],
+    "per_class_support": [
+      100188,
+      32318,
+      29988,
+      11456,
+      15848,
+      9998,
+      785,
+      409
+    ],
+    "per_client_f1": [
+      0.6909165438686363,
+      0.6540886880239026,
+      0.7525289507301306,
+      0.7116606275842546,
+      0.7053668990357576,
+      0.9881407618955419,
+      0.7296752644987607,
+      0.5525962426779436,
+      0.8705931308844772,
+      0.642572991523716,
+      0.7266435798498451,
+      0.9497277014775455,
+      0.5466079255090839,
+      0.6288776686365816,
+      0.9406633532812658,
+      0.9547952627912377,
+      0.40653640405711566,
+      0.9877607353191284,
+      0.6804247473009578,
+      0.5439282555478001
+    ],
+    "n_test": 200990
+  },
+  "profile": {
+    "params": 54600,
+    "flops_per_sample": 106496,
+    "latency_ms_b1": 0.9126706700772047,
+    "latency_ms_b1024": 0.5580878490582108,
+    "train_time_s": 391.8087791760918,
+    "wall_time_s": 393.4712448120117,
+    "comm_up_MB": 109.20744,
+    "peak_rss_mb": 1466.20703125,
+    "peak_vram_mb": 286.15234375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.48200598037071185,
+      "val_acc": 0.7229496281102825,
+      "comm_up_MB": 10.92744,
+      "train_time_s": 40.206387493992224
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.5789182486934946,
+      "val_acc": 0.7055151195324246,
+      "comm_up_MB": 21.84744,
+      "train_time_s": 79.27257244568318
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.598523359069333,
+      "val_acc": 0.7350572023139804,
+      "comm_up_MB": 32.76744,
+      "train_time_s": 119.05746728880331
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.6028695009093112,
+      "val_acc": 0.7213067418079715,
+      "comm_up_MB": 43.68744,
+      "train_time_s": 157.4064785798546
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.6052559538310647,
+      "val_acc": 0.7330459112044846,
+      "comm_up_MB": 54.60744,
+      "train_time_s": 196.9352404011879
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.5963130768522324,
+      "val_acc": 0.7197733812591479,
+      "comm_up_MB": 65.52744,
+      "train_time_s": 235.95402010949329
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.6084608604344122,
+      "val_acc": 0.7374169844572999,
+      "comm_up_MB": 76.44744,
+      "train_time_s": 273.93987877713516
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.6032284016219872,
+      "val_acc": 0.7407525414953252,
+      "comm_up_MB": 87.36744,
+      "train_time_s": 314.29005081532523
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.6040611255992191,
+      "val_acc": 0.7252795395935598,
+      "comm_up_MB": 98.28744,
+      "train_time_s": 352.81152457604185
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.6380020795415038,
+      "val_acc": 0.8050342019057481,
+      "comm_up_MB": 109.20744,
+      "train_time_s": 391.8087791760918
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 24
+    },
+    "device": "cuda",
+    "prepared_sha256": "dcad9db348d5e307681b4528598c25048fa46412356b05166e74117af53e2927",
+    "argv": [
+      "/workspace/src/code/src/fedsim/run.py",
+      "dataset=ciciot2023",
+      "task.labels=grouped",
+      "method=sfspcl",
+      "seed=0",
+      "suite=pilot_fsp_lr",
+      "fl.lr=0.1",
+      "method.tau=1.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-10-31T21:55:02"
+  }
+}

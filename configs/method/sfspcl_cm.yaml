@@ -1,0 +1,14 @@
+# Pilot 2 candidate P2: SFS-PCL + FedCM global-direction correction inside local steps (stateless clients).
+name: sfspcl_cm
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+fedcm_alpha: 0.1

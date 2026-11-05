@@ -1,0 +1,8 @@
+suite: tune_v3
+# Pilot 2 (pre-registered 2026-11-01): tune each new component's own hyperparameter on seed 100, fine labels,
+# selection by mean validation macro-F1 over both datasets. Grids are pre-extended; a selection still on an
+# edge is reported, not extended further. Client lr, tau and server beta1 stay at their earlier tuned values.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_m_ntd], seeds: [100], sweep: {method.ntd: [0.1, 0.3, 1.0, 3.0, 10.0]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_cm], seeds: [100], sweep: {method.fedcm_alpha: [0.02, 0.05, 0.1, 0.2, 0.5, 0.8]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_m_fa], seeds: [100], sweep: {method.anchor: [0.001, 0.01, 0.1, 1.0, 3.0]}}

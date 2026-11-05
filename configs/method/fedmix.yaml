@@ -1,0 +1,23 @@
+# FedMiX (proposed, adopted at checkpoint 2c): SFS + class-conditional mixture virtual samples (r = 1.0) + guarded CCVR,
+# plain cross-entropy (SFS-PCL-V without PCL). Same computation as sfspcl_v_ccvr_ce, so runs are shared.
+name: fedmix
+norm: global
+agg: fedavg
+beta: 0.0
+loss: ce
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+virtual: 1.0
+vmix_k: 8
+vmix_min: 50
+vmix_cap: 5000
+ccvr: true
+ccvr_samples: 2000
+ccvr_epochs: 10
+ccvr_lr: 0.1
+ccvr_guard: true

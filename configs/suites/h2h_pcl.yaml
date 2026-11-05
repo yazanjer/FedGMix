@@ -1,0 +1,8 @@
+suite: h2h_pcl
+# Checkpoint 2c (pre-registered 2026-11-03, docs/H2H_PREREG.md): SFS-PCL-V vs SFS-PCL-V without PCL vs SCAFFOLD on
+# FRESH seeds 15-19 (never used before), three datasets, fine and grouped labels, with the site-shuffled metric.
+groups:
+  - datasets: [ciciot2023, edgeiiot, toniot]
+    labels: [fine, grouped]
+    methods: [sfspcl_v_ccvr, sfspcl_v_ccvr_ce, scaffold]
+    seeds: [15, 16, 17, 18, 19]

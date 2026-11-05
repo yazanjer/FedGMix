@@ -1,0 +1,450 @@
+[
+ {
+  "suite": "pilot_v2",
+  "run_id": "7a27a332e329",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "scaffold",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "0780fa1efd8e",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "scaffold",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "c3feb5c90cf1",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "643d4f005b7d",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "693ea50194d7",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_m",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3f9275a0b78b",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_m",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "62164674d638",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_adam",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3fc0819babc0",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_adam",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3c1215ef8357",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_etf",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "0b64306106f3",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_etf",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "74af7e43a95a",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_ccvr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "c286e6fed8d6",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_ccvr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "534c6b884e48",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "616b0dd00896",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "0c05882c4d7e",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "scaffold",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "4f0467999e67",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "scaffold",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "efe254b6b56f",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "ffd6019c45f4",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3de56b81c345",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_m",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "61e3f555382f",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_m",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "1bfc45d1037a",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_adam",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "38e63f1f622e",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_adam",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "362945b8e3f1",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_etf",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "4edebeb8feaf",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_etf",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "069e750b8d7d",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_ccvr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "ea71c777ea6d",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_ccvr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "7e7c3d14c58b",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_decorr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "6ee01f4e8e26",
+  "dataset": "ciciot2023",
+  "labels": "grouped",
+  "method": "sfspcl_decorr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "595d1da69f05",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "scaffold",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "26da0084de4e",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "scaffold",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "d3501dff0c54",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "95dc95567fa1",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "8b1cb3d70bb4",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_m",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "7d2849afa800",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_m",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "ba88f7330649",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_adam",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "796224b9819a",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_adam",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "e208eb8a6f90",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_etf",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "020753278a6b",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_etf",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "edac2b224727",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_ccvr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "619392348e18",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_ccvr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "f354652fc769",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "a73b4b0ac9ef",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3fe1a6bb47e5",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "scaffold",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "ef6ae5598fab",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "scaffold",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "d1245b0920e6",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "f1b4ca4d2f46",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "9f4d9c8324db",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_m",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "26a81385c150",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_m",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "fc5ac146d198",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_adam",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "7e24003378ce",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_adam",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "d31e6532169d",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_etf",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "b52c97d70344",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_etf",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "bf9ad81a5b38",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_ccvr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "70070821b774",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_ccvr",
+  "seed": 1
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "82058d25e363",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_decorr",
+  "seed": 0
+ },
+ {
+  "suite": "pilot_v2",
+  "run_id": "3c9516370358",
+  "dataset": "edgeiiot",
+  "labels": "grouped",
+  "method": "sfspcl_decorr",
+  "seed": 1
+ }
+]

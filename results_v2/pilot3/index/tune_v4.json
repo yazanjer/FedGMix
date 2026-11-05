@@ -1,0 +1,74 @@
+[
+ {
+  "suite": "tune_v4",
+  "run_id": "50aa22f36449",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 0.25
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "1c05768fe877",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 0.5
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "84c68a7504b2",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 1.0
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "6cc54048ba4e",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 2.0
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "521e48398a68",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 0.25
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "75ccd9602614",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 0.5
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "32fe3a7fb323",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 1.0
+ },
+ {
+  "suite": "tune_v4",
+  "run_id": "61f9b9424fd7",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_v",
+  "seed": 100,
+  "method.virtual": 2.0
+ }
+]

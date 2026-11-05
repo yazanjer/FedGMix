@@ -1,0 +1,8 @@
+simplex ETF geometry: OK
+v2 defaults reproduce v1 SFS-PCL bit-exactly: OK
+server momentum: beta=0 == FedAvg, beta=0.9 differs: OK
+FedAdam single step matches the closed form; BN buffers averaged: OK
+ETF / frozen heads stay fixed and are not uploaded: OK
+v2 determinism + resume (server state checkpointed): OK
+decorrelation loss: independent ~1/d, duplicated columns higher: OK
+CCVR: pooled class moments exact, only the head changes, deterministic: OK

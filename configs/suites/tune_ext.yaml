@@ -1,0 +1,9 @@
+suite: tune_ext
+# Checkpoint-2b sensitivity (pre-registered 2026-11-02): extend the grids of baselines selected on a grid edge in
+# tune_grid. The previously selected edge value is included, so a changed selection is a real improvement on the
+# tuning seed. Same protocol (seed 100, fine labels, mean validation macro-F1 over CICIoT2023 and Edge-IIoTset).
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [ccvr], seeds: [100], sweep: {method.ccvr_lr: [0.3, 0.6, 1.0]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [feddyn], seeds: [100], sweep: {method.feddyn_alpha: [0.1, 0.3, 1.0], fl.lr: [0.005, 0.01, 0.02]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedavgm], seeds: [100], sweep: {method.server_beta1: [0.1, 0.2, 0.3]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [fedlc], seeds: [100], sweep: {method.tau: [0.001, 0.003, 0.01]}}

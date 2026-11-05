@@ -1,0 +1,3 @@
+suite: pilot_v2_decorr_ext
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine, grouped], methods: [sfspcl_decorr], seeds: [0, 1], fixed: {method.decorr: 3.0}}

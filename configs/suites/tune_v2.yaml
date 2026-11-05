@@ -1,0 +1,10 @@
+suite: tune_v2
+# Pilot tuning of each v2 candidate's own hyperparameter: tuning seed 100, main setting, fine labels,
+# selection by mean validation macro-F1 over the two datasets. Client lr and tau stay at SFS-PCL's values.
+# Grid-extension rule: if the selected value is on an edge of its grid, extend the grid and re-run.
+groups:
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_m], seeds: [100], sweep: {method.server_beta1: [0.3, 0.5, 0.7, 0.9]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_adam], seeds: [100], sweep: {method.server_lr: [0.001, 0.003, 0.01, 0.03, 0.1]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_etf], seeds: [100], sweep: {method.head_scale: [2.0, 5.0, 10.0, 20.0, 40.0]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_ccvr], seeds: [100], sweep: {method.ccvr_lr: [0.003, 0.01, 0.03, 0.1, 0.3]}}
+  - {datasets: [ciciot2023, edgeiiot], labels: [fine], methods: [sfspcl_decorr], seeds: [100], sweep: {method.decorr: [0.01, 0.03, 0.1, 0.3, 1.0]}}

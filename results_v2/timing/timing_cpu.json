@@ -1,0 +1,40 @@
+{
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz (cloud workspace)",
+ "threads": 1,
+ "torch": "2.15.0+cu132",
+ "datasets": {
+  "CICIoT2023": {
+   "d": 46,
+   "classes": 34,
+   "client_train_flows": 35195,
+   "epoch_s_fedavg": 0.431,
+   "epoch_s_scaffold": 0.456,
+   "epoch_s_fedgmix": 0.732,
+   "em_fit_s_5000x8_100it": 1.9,
+   "dp_em_fit_s_5000x2_5it": 0.03,
+   "ratio_fedgmix_vs_fedavg": 1.7
+  },
+  "Edge-IIoTset": {
+   "d": 95,
+   "classes": 15,
+   "client_train_flows": 21843,
+   "epoch_s_fedavg": 0.304,
+   "epoch_s_scaffold": 0.283,
+   "epoch_s_fedgmix": 0.619,
+   "em_fit_s_5000x8_100it": 5.92,
+   "dp_em_fit_s_5000x2_5it": 0.09,
+   "ratio_fedgmix_vs_fedavg": 2.04
+  },
+  "TON_IoT": {
+   "d": 150,
+   "classes": 10,
+   "client_train_flows": 4195,
+   "epoch_s_fedavg": 0.058,
+   "epoch_s_scaffold": 0.06,
+   "epoch_s_fedgmix": 0.252,
+   "em_fit_s_5000x8_100it": 10.78,
+   "dp_em_fit_s_5000x2_5it": 0.19,
+   "ratio_fedgmix_vs_fedavg": 4.34
+  }
+ }
+}

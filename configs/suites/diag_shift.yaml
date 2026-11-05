@@ -1,0 +1,9 @@
+suite: diag_shift
+# Checkpoint-2b diagnostic (pre-registered 2026-11-02, docs/DIAG_PREREG.md): re-run a subset of grid_main cells with
+# +eval_shift=true. Training is unchanged (identical run_ids and test scores to grid_main); the extra metric
+# test_site_shuffled re-assigns pooled test traffic to random sites.
+groups:
+  - datasets: [ciciot2023, edgeiiot, toniot]
+    labels: [fine]
+    methods: [sfspcl_v_ccvr, sfspcl_v_ccvr_ln, sfspcl_v, sfspcl, ccvr, scaffold, scaffold_sfs, feddyn, fedavg, statavg, fedbn, centralised]
+    seeds: [10, 11, 12]

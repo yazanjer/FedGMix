@@ -1,0 +1,15 @@
+# v2 candidate C2: SFS-PCL + fixed simplex-ETF head (learned projection, L2-normalised features).
+name: sfspcl_etf
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+head: etf
+head_scale: 10.0

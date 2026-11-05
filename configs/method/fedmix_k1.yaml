@@ -1,0 +1,23 @@
+# Ablation (referee): one Gaussian per (client, class) instead of up to 8 components; corrected guard.
+name: fedmix_k1
+norm: global
+agg: fedavg
+beta: 0.0
+loss: ce
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+virtual: 1.0
+vmix_k: 1
+vmix_min: 50
+vmix_cap: 5000
+ccvr: true
+ccvr_samples: 2000
+ccvr_epochs: 10
+ccvr_lr: 0.1
+ccvr_guard: true
+vmix_cover_fit: true

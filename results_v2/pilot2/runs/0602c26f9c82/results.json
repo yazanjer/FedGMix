@@ -1,0 +1,313 @@
+{
+  "run_id": "0602c26f9c82",
+  "identity": {
+    "dataset": "edgeiiot",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "timing_run": false,
+    "labels": "fine",
+    "seed": 100,
+    "federation": {
+      "n_clients": 20,
+      "alpha": 0.1,
+      "min_client_size": 50,
+      "val_frac": 0.1,
+      "test_frac": 0.2
+    },
+    "fl": {
+      "rounds": 50,
+      "participation": 0.5,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "lr": 0.05,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "eval_every": 5,
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "model_norm": "batch"
+    },
+    "method": {
+      "norm": "global",
+      "agg": "fedavg",
+      "beta": 0.0,
+      "loss": "la",
+      "tau": 1.0,
+      "fedrs_alpha": 0.5,
+      "prox_mu": 0.0,
+      "scaffold": false,
+      "fedbn": false,
+      "pooled": false,
+      "client_momentum": null,
+      "server_opt": "momentum",
+      "server_beta1": 0.7,
+      "anchor": 3.0
+    }
+  },
+  "method_name": "sfspcl_m_fa",
+  "suite": "tune_v3",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "seed": 100,
+  "class_names": [
+    "Normal",
+    "DDoS_UDP",
+    "DDoS_ICMP",
+    "DDoS_TCP",
+    "DDoS_HTTP",
+    "SQL_injection",
+    "XSS",
+    "Uploading",
+    "Backdoor",
+    "Password",
+    "Ransomware",
+    "Port_Scanning",
+    "Vulnerability_scanner",
+    "Fingerprinting",
+    "MITM"
+  ],
+  "train_class_counts": [
+    70011,
+    70010,
+    47569,
+    35051,
+    33987,
+    35589,
+    10553,
+    25772,
+    16825,
+    34961,
+    6790,
+    13991,
+    35024,
+    600,
+    255
+  ],
+  "client_train_sizes": [
+    8676,
+    825,
+    31702,
+    27042,
+    26821,
+    14783,
+    14833,
+    13014,
+    47408,
+    4856,
+    5221,
+    30180,
+    32993,
+    14695,
+    32663,
+    51847,
+    6331,
+    30871,
+    28801,
+    13426
+  ],
+  "best_round": 5,
+  "best_val_macro_f1": 0.026587822780326682,
+  "test": {
+    "macro_f1": 0.030301949823526932,
+    "accuracy": 0.16033342684246382,
+    "balanced_accuracy": 0.0753623188405797,
+    "weighted_f1": 0.04438058737618429,
+    "tail_recall": 0.03260869565217391,
+    "tail_classes": [
+      14,
+      13,
+      10,
+      6
+    ],
+    "worst_client_f1_p10": 0.0,
+    "mean_client_f1": 0.048150686253948125,
+    "per_class_recall": [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.13043478260869565
+    ],
+    "per_class_f1": [
+      0.0,
+      0.2763114255707258,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1782178217821782
+    ],
+    "per_class_support": [
+      19995,
+      19995,
+      13582,
+      10009,
+      9705,
+      10160,
+      3010,
+      7358,
+      4802,
+      9983,
+      1934,
+      3992,
+      10002,
+      169,
+      69
+    ],
+    "per_client_f1": [
+      0.017316017316017316,
+      0.027777777777777776,
+      0.0,
+      0.0,
+      0.0016856846473029046,
+      0.0,
+      0.050508857896720695,
+      0.12336047037539576,
+      0.48878822197055494,
+      0.08477633477633477,
+      0.0028888888888888888,
+      0.0,
+      0.017617030520256326,
+      0.000891583452211127,
+      0.039469862977532535,
+      0.0,
+      0.03508771929824561,
+      0.0,
+      0.07284527518172378,
+      0.0
+    ],
+    "n_test": 124765
+  },
+  "profile": {
+    "params": 67599,
+    "flops_per_sample": 132480,
+    "latency_ms_b1": 0.98552257521078,
+    "latency_ms_b1024": 1.01441505481489,
+    "train_time_s": 392.0428190843668,
+    "wall_time_s": 393.35786271095276,
+    "comm_up_MB": 137.16328,
+    "peak_rss_mb": 1763.43359375,
+    "peak_vram_mb": 330.12109375
+  },
+  "curve": [
+    {
+      "round": 5,
+      "val_macro_f1": 0.026587822780326682,
+      "val_acc": 0.16034770336156018,
+      "comm_up_MB": 13.73008,
+      "train_time_s": 49.41187193710357
+    },
+    {
+      "round": 10,
+      "val_macro_f1": 0.018417305964475775,
+      "val_acc": 0.16026751347190146,
+      "comm_up_MB": 27.44488,
+      "train_time_s": 86.13033829792403
+    },
+    {
+      "round": 15,
+      "val_macro_f1": 0.010040095120853913,
+      "val_acc": 0.08142481395945599,
+      "comm_up_MB": 41.15968,
+      "train_time_s": 123.33222095691599
+    },
+    {
+      "round": 20,
+      "val_macro_f1": 0.018420737382393866,
+      "val_acc": 0.16029958942776495,
+      "comm_up_MB": 54.87448,
+      "train_time_s": 167.4548392139841
+    },
+    {
+      "round": 25,
+      "val_macro_f1": 0.0049399494473701825,
+      "val_acc": 0.03847510905824993,
+      "comm_up_MB": 68.58928,
+      "train_time_s": 210.90211887727492
+    },
+    {
+      "round": 30,
+      "val_macro_f1": 0.018420482765929017,
+      "val_acc": 0.16029958942776495,
+      "comm_up_MB": 82.30408,
+      "train_time_s": 246.92291766754352
+    },
+    {
+      "round": 35,
+      "val_macro_f1": 0.018420482765929017,
+      "val_acc": 0.16029958942776495,
+      "comm_up_MB": 96.01888,
+      "train_time_s": 284.3481813748367
+    },
+    {
+      "round": 40,
+      "val_macro_f1": 0.01841889438715801,
+      "val_acc": 0.1602835514498332,
+      "comm_up_MB": 109.73368,
+      "train_time_s": 321.7584679420106
+    },
+    {
+      "round": 45,
+      "val_macro_f1": 0.009902646413953189,
+      "val_acc": 0.08022196561457531,
+      "comm_up_MB": 123.44848,
+      "train_time_s": 361.1323432403151
+    },
+    {
+      "round": 50,
+      "val_macro_f1": 0.01841889438715801,
+      "val_acc": 0.1602835514498332,
+      "comm_up_MB": 137.16328,
+      "train_time_s": 392.0428190843668
+    }
+  ],
+  "provenance": {
+    "git": "unknown",
+    "hardware": {
+      "python": "3.11.10",
+      "torch": "2.11.0+cu128",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+      "cpu": "x86_64",
+      "cuda": "12.8",
+      "gpu": "NVIDIA L4",
+      "torch_threads": 64
+    },
+    "device": "cuda",
+    "prepared_sha256": "9be2aed2356fdd1324abdd2ca6d77460d2ca60358ef8bec38ffa54a4a188f24e",
+    "argv": [
+      "/workspace/code/src/fedsim/run.py",
+      "dataset=edgeiiot",
+      "task.labels=fine",
+      "method=sfspcl_m_fa",
+      "seed=100",
+      "suite=tune_v3",
+      "fl.lr=0.05",
+      "method.anchor=3.0",
+      "paths.out_root=outputs_v2",
+      "paths.data_root=data/prepared"
+    ],
+    "cpu_threads": null,
+    "timestamp": "2026-11-01T11:03:41"
+  }
+}

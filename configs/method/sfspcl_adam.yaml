@@ -1,0 +1,18 @@
+# v2 candidate C1b: SFS-PCL + FedAdam server optimiser.
+name: sfspcl_adam
+norm: global
+agg: fedavg
+beta: 0.0
+loss: la
+tau: 1.0
+fedrs_alpha: 0.5
+prox_mu: 0.0
+scaffold: false
+fedbn: false
+pooled: false
+client_momentum: null
+server_opt: adam
+server_lr: 0.01
+server_beta1: 0.9
+server_beta2: 0.99
+server_eps: 0.001

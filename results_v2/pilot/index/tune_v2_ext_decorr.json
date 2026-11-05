@@ -1,0 +1,38 @@
+[
+ {
+  "suite": "tune_v2_ext_decorr",
+  "run_id": "a8cf48a3a411",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 100,
+  "method.decorr": 3.0
+ },
+ {
+  "suite": "tune_v2_ext_decorr",
+  "run_id": "431240e58c6f",
+  "dataset": "ciciot2023",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 100,
+  "method.decorr": 10.0
+ },
+ {
+  "suite": "tune_v2_ext_decorr",
+  "run_id": "eb8239404213",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 100,
+  "method.decorr": 3.0
+ },
+ {
+  "suite": "tune_v2_ext_decorr",
+  "run_id": "386b84ee5464",
+  "dataset": "edgeiiot",
+  "labels": "fine",
+  "method": "sfspcl_decorr",
+  "seed": 100,
+  "method.decorr": 10.0
+ }
+]

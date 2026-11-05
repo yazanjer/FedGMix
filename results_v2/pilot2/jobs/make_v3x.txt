@@ -1,0 +1,1 @@
+sfspcl_m_fa {'val_macro_f1_mean': 0.6923, 'method.anchor': 0.01}
